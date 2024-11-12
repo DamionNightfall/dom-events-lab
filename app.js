@@ -52,7 +52,7 @@ function handleOperatorClick(event) {
 function calculateResult() {
     console.log('Calculating result...'); // Debug log
     if (previousInput === '' || currentInput === '') return; // Return if there isn't enough input to calculate
-    const nuupm1 = parseFloat(previousInput);
+    const num1 = parseFloat(previousInput);
     const num2 = parseFloat(currentInput);
     let result;
     switch (operator) {
