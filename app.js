@@ -76,6 +76,7 @@ function calculateResult() {
     previousInput = '';
     operator = '';
     updateDisplay();
+    afterFunction();
 }
 
 function clearCalculator() {
@@ -84,6 +85,12 @@ function clearCalculator() {
     previousInput = '';
     operator = '';
     updateDisplay();
+}
+function afterFunction() {
+    console.log('Clearing calculator...'); // Debug log
+    currentInput = '';
+    previousInput = '';
+    operator = '';
 }
 
 function updateDisplay() {
